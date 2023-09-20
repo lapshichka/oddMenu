@@ -272,9 +272,14 @@ body {
   flex: 1;
   padding: 30px 30px 30px 35px;
   border-radius: 8px;
+  transition: 0.5s;
 }
 .advantages-menu__item:not(:last-child) {
   margin-bottom: 42px;
+}
+.advantages-menu__item:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
 }
 /* ------------------------------------- */
 .advantages-menu-list__title {
@@ -294,4 +299,90 @@ body {
 }
 .advantages-menu__block-text {
   max-width: 340px;
+}
+/* -------------------------------------
+------------------------------------- */
+.price {
+  height: 100%;
+  background-color: #fde8db;
+  padding: 70px 0 80px;
+}
+.block-text__price-title {
+  margin-bottom: 42px;
+}
+/* ------------------------------------- */
+.price__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price__orange-card {
+  flex: 0 0 23%;
+  height: 284px;
+  padding: 32px 16px;
+}
+.price__item {
+  z-index: 1;
+  display: flex;
+  flex: 0 0 20%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 240px;
+  padding: 32px 16px;
+  box-shadow: 0 0 transparent, 0 0 transparent,
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: 0.5s;
+}
+.price__item:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+.price__orange-item {
+  z-index: 5;
+  flex: 0 0 23%;
+  height: 284px;
+  padding: 32px 16px;
+  background: linear-gradient(312deg, #f7906c, #ffb76d);
+}
+/* ------------------------------------- */
+.price__title {
+  margin: 0 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: ce;
+}
+.price__sum {
+  font-size: 52px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff9a76;
+}
+.price__sum span {
+  font-size: 32px;
+  font-weight: 400;
+}
+.price__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.2;
+  color: #767676;
+}
+.price__orange-sum {
+  color: #fff;
+}
+.price__signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 8px;
+  font-size: 10px;
+  color: #767676;
 }
