@@ -446,3 +446,32 @@ body {
   box-shadow: 0 0 transparent, 0 0 transparent,
     0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+/* -------------------------------------
+------------------------------------- */
+.include {
+  padding: 62px 0;
+}
+/* ------------------------------------- */
+.include__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.include__item {
+  flex: 0 0 40%;
+  font-size: 16px;
+  position: relative;
+  padding-left: 32px;
+  background-image: url(../image/includeIcon.svg);
+  background-repeat: no-repeat;
+  background-position-y: 15%;
+}
+.include__item:nth-child(2n) {
+  margin-left: 32px;
+}
+.include__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.block-text__include-title {
+  padding: 0 15px 48px 15px;
+}
