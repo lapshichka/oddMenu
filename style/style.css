@@ -25,7 +25,7 @@ body {
 /* -------------------------------------
 ------------------------------------- */
 .header {
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: #fde8db;
 }
@@ -126,7 +126,7 @@ body {
 .example-menu__container {
   display: flex;
   flex-wrap: wrap;
-  padding: 180px 15px 50px 15px;
+  padding: 150px 15px 50px 15px;
 }
 .example-menu__content {
   display: flex;
@@ -310,6 +310,21 @@ body {
 .block-text__price-title {
   margin-bottom: 42px;
 }
+.price__container {
+  position: relative;
+  z-index: 5;
+}
+/* ------------------------------------- */
+.price__images-1 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+}
+.price__images-2 {
+  position: absolute;
+  right: 0;
+  top: 6%;
+}
 /* ------------------------------------- */
 .price__content {
   display: flex;
@@ -385,4 +400,49 @@ body {
   margin-top: 8px;
   font-size: 10px;
   color: #767676;
+}
+/* -------------------------------------
+------------------------------------- */
+.free {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.free__content {
+  display: flex;
+  flex: 0 0 55%;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+  background-color: #fff;
+  border-radius: 22px;
+  margin-top: 48px;
+  box-shadow: 0 0 transparent, 0 0 transparent,
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: 0.5s;
+  z-index: 1;
+}
+.free__content:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+/* ------------------------------------- */
+.free__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+.free__text {
+  font-size: 16px;
+  margin: 0 0 32px;
+  text-align: center;
+  line-height: 1.45;
+}
+.free__button {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 28px;
+  box-shadow: 0 0 transparent, 0 0 transparent,
+    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
